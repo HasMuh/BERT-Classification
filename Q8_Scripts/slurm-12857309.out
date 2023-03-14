@@ -1,0 +1,115 @@
+Could not find conda environment: toy_classification_env
+You can list all discoverable environments with `conda info --envs`.
+
+Defaulting to user installation because normal site-packages is not writeable
+ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+Found cached dataset boolq (/home/hmuhamm8/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Specified arguments: Namespace(batch_size=32, device='cuda', experiment='Cased BERT Sweep', lr=0.001, model='BERT-base-cased', num_epochs=5, plot='CASED_BERT_5ep_1e3', small_subset=False)
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 845.20it/s]
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Downloading (…)okenizer_config.json:   0%|          | 0.00/29.0 [00:00<?, ?B/s]Downloading (…)okenizer_config.json: 100%|██████████| 29.0/29.0 [00:00<00:00, 10.2kB/s]
+Downloading (…)lve/main/config.json:   0%|          | 0.00/570 [00:00<?, ?B/s]Downloading (…)lve/main/config.json: 100%|██████████| 570/570 [00:00<00:00, 448kB/s]
+Downloading (…)solve/main/vocab.txt:   0%|          | 0.00/213k [00:00<?, ?B/s]Downloading (…)solve/main/vocab.txt: 100%|██████████| 213k/213k [00:00<00:00, 15.6MB/s]
+Downloading (…)/main/tokenizer.json:   0%|          | 0.00/436k [00:00<?, ?B/s]Downloading (…)/main/tokenizer.json: 100%|██████████| 436k/436k [00:00<00:00, 15.9MB/s]
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Downloading pytorch_model.bin:   0%|          | 0.00/436M [00:00<?, ?B/s]Downloading pytorch_model.bin:   2%|▏         | 10.5M/436M [00:00<00:26, 16.2MB/s]Downloading pytorch_model.bin:   5%|▍         | 21.0M/436M [00:00<00:15, 26.7MB/s]Downloading pytorch_model.bin:   7%|▋         | 31.5M/436M [00:00<00:10, 38.4MB/s]Downloading pytorch_model.bin:  10%|▉         | 41.9M/436M [00:01<00:08, 45.8MB/s]Downloading pytorch_model.bin:  12%|█▏        | 52.4M/436M [00:01<00:09, 40.0MB/s]Downloading pytorch_model.bin:  14%|█▍        | 62.9M/436M [00:01<00:07, 48.0MB/s]Downloading pytorch_model.bin:  17%|█▋        | 73.4M/436M [00:01<00:06, 52.4MB/s]Downloading pytorch_model.bin:  19%|█▉        | 83.9M/436M [00:01<00:06, 54.4MB/s]Downloading pytorch_model.bin:  22%|██▏       | 94.4M/436M [00:02<00:05, 60.3MB/s]Downloading pytorch_model.bin:  24%|██▍       | 105M/436M [00:02<00:05, 60.4MB/s] Downloading pytorch_model.bin:  26%|██▋       | 115M/436M [00:02<00:05, 61.4MB/s]Downloading pytorch_model.bin:  29%|██▉       | 126M/436M [00:02<00:05, 57.7MB/s]Downloading pytorch_model.bin:  31%|███▏      | 136M/436M [00:02<00:04, 60.2MB/s]Downloading pytorch_model.bin:  34%|███▎      | 147M/436M [00:03<00:07, 40.5MB/s]Downloading pytorch_model.bin:  36%|███▌      | 157M/436M [00:03<00:05, 46.4MB/s]Downloading pytorch_model.bin:  38%|███▊      | 168M/436M [00:03<00:05, 45.2MB/s]Downloading pytorch_model.bin:  41%|████      | 178M/436M [00:03<00:05, 49.5MB/s]Downloading pytorch_model.bin:  43%|████▎     | 189M/436M [00:03<00:04, 51.2MB/s]Downloading pytorch_model.bin:  46%|████▌     | 199M/436M [00:04<00:04, 50.6MB/s]Downloading pytorch_model.bin:  48%|████▊     | 210M/436M [00:04<00:04, 50.3MB/s]Downloading pytorch_model.bin:  51%|█████     | 220M/436M [00:04<00:03, 57.5MB/s]Downloading pytorch_model.bin:  53%|█████▎    | 231M/436M [00:04<00:03, 55.8MB/s]Downloading pytorch_model.bin:  55%|█████▌    | 241M/436M [00:04<00:03, 49.6MB/s]Downloading pytorch_model.bin:  58%|█████▊    | 252M/436M [00:05<00:03, 52.5MB/s]Downloading pytorch_model.bin:  60%|██████    | 262M/436M [00:05<00:02, 60.0MB/s]Downloading pytorch_model.bin:  63%|██████▎   | 273M/436M [00:05<00:02, 62.3MB/s]Downloading pytorch_model.bin:  65%|██████▍   | 283M/436M [00:05<00:02, 64.3MB/s]Downloading pytorch_model.bin:  67%|██████▋   | 294M/436M [00:05<00:02, 63.9MB/s]Downloading pytorch_model.bin:  70%|██████▉   | 304M/436M [00:05<00:02, 64.1MB/s]Downloading pytorch_model.bin:  72%|███████▏  | 315M/436M [00:06<00:01, 65.5MB/s]Downloading pytorch_model.bin:  75%|███████▍  | 325M/436M [00:06<00:01, 68.3MB/s]Downloading pytorch_model.bin:  77%|███████▋  | 336M/436M [00:06<00:01, 55.4MB/s]Downloading pytorch_model.bin:  79%|███████▉  | 346M/436M [00:06<00:01, 59.6MB/s]Downloading pytorch_model.bin:  82%|████████▏ | 357M/436M [00:06<00:01, 54.6MB/s]Downloading pytorch_model.bin:  84%|████████▍ | 367M/436M [00:07<00:01, 58.9MB/s]Downloading pytorch_model.bin:  87%|████████▋ | 377M/436M [00:07<00:01, 45.4MB/s]Downloading pytorch_model.bin:  89%|████████▉ | 388M/436M [00:07<00:01, 43.6MB/s]Downloading pytorch_model.bin:  91%|█████████▏| 398M/436M [00:07<00:00, 46.3MB/s]Downloading pytorch_model.bin:  94%|█████████▍| 409M/436M [00:08<00:00, 47.4MB/s]Downloading pytorch_model.bin:  96%|█████████▌| 419M/436M [00:08<00:00, 43.7MB/s]Downloading pytorch_model.bin:  99%|█████████▊| 430M/436M [00:08<00:00, 47.2MB/s]Downloading pytorch_model.bin: 100%|██████████| 436M/436M [00:08<00:00, 50.9MB/s]
+Some weights of the model checkpoint at BERT-base-cased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.decoder.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at BERT-base-cased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Moving model to device ...cuda
+ >>>>>>>>  Starting training ... 
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy=0.58775
+ - Average validation metrics: accuracy=0.6217125382262997
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy=0.5885
+ - Average validation metrics: accuracy=0.6217125382262997
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy=0.597375
+ - Average validation metrics: accuracy=0.6217125382262997
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy=0.600125
+ - Average validation metrics: accuracy=0.6217125382262997
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy=0.617375
+ - Average validation metrics: accuracy=0.6217125382262997
+torch.cuda.memory_allocated: 0.825549GB
+torch.cuda.memory_reserved: 6.939453GB
+torch.cuda.max_memory_reserved: 6.939453GB
+Mon Mar 13 03:08:40 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.56       Driver Version: 460.56       CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Graphics Device     On   | 00000000:17:00.0 Off |                   On |
+| N/A   59C    P0   306W / 300W |  47243MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   1  Graphics Device     On   | 00000000:31:00.0 Off |                   On |
+| N/A   62C    P0   298W / 300W |  57073MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   2  Graphics Device     On   | 00000000:B1:00.0 Off |                   On |
+| N/A   45C    P0   178W / 300W |  23414MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   3  Graphics Device     On   | 00000000:CA:00.0 Off |                   On |
+| N/A   34C    P0    98W / 300W |   8311MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| MIG devices:                                                                |
++------------------+----------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |         Memory-Usage |        Vol|         Shared        |
+|      ID  ID  Dev |           BAR1-Usage | SM     Unc| CE  ENC  DEC  OFA  JPG|
+|                  |                      |        ECC|                       |
+|==================+======================+===========+=======================|
+|  0   11   0   0  |   8028MiB /  9728MiB | 14      0 |  1   0    0    0    0 |
+|                  |      4MiB / 16383MiB |           |                       |
++------------------+----------------------+-----------+-----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   11    0       8381      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1    7    0       3520      C   ...jeefzx3kp5jqdu/bin/python     7345MiB |
+|    1    8    0       8935      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1    9    0       9196      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1   11    0       9198      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1   12    0       9200      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1   13    0       9309      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    1   10    0      10051      C   ...sification_env/bin/python     9577MiB |
+|    2    8    0       9465      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    2    9    0       9467      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    2   10    0      10704      C   ...jeefzx3kp5jqdu/bin/python     7345MiB |
+|    3    8    0       1245      C   ...jeefzx3kp5jqdu/bin/python     8295MiB |
++-----------------------------------------------------------------------------+
+
+ - Average DEV metrics: accuracy=0.6217125382262997
+ - Average TEST metrics: accuracy=0.6243868255080589

@@ -1,0 +1,117 @@
+Could not find conda environment: toy_classification_env
+You can list all discoverable environments with `conda info --envs`.
+
+Defaulting to user installation because normal site-packages is not writeable
+ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+Found cached dataset boolq (/home/hmuhamm8/.cache/huggingface/datasets/boolq/default/0.1.0/bf0dd57da941c50de94ae3ce3cef7fea48c08f337a4b7aac484e9dddc5aa24e5)
+Specified arguments: Namespace(batch_size=32, device='cuda', experiment='BERT Sweep', lr=0.0001, model='BERT-base-cased', num_epochs=7, plot='CASED_BERT_7ep_1e4', small_subset=False)
+Loading the dataset ...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 888.44it/s]
+Some weights of the model checkpoint at BERT-base-cased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at BERT-base-cased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Slicing the data...
+Size of the loaded dataset:
+ - train: 8000
+ - dev: 3270
+ - test: 1427
+Loading the tokenizer...
+Loding the data into DS...
+ >>>>>>>> Initializing the data loaders ... 
+Loading the model ...
+Moving model to device ...cuda
+ >>>>>>>>  Starting training ... 
+ >>>>>>>>  Initializing optimizer
+Epoch 1 training:
+ ===> Epoch 1
+ - Average training metrics: accuracy=0.618125
+ - Average validation metrics: accuracy=0.6217125382262997
+Epoch 2 training:
+ ===> Epoch 2
+ - Average training metrics: accuracy=0.617375
+ - Average validation metrics: accuracy=0.6217125382262997
+Epoch 3 training:
+ ===> Epoch 3
+ - Average training metrics: accuracy=0.61675
+ - Average validation metrics: accuracy=0.6217125382262997
+Epoch 4 training:
+ ===> Epoch 4
+ - Average training metrics: accuracy=0.625625
+ - Average validation metrics: accuracy=0.6474006116207951
+Epoch 5 training:
+ ===> Epoch 5
+ - Average training metrics: accuracy=0.708
+ - Average validation metrics: accuracy=0.645565749235474
+Epoch 6 training:
+ ===> Epoch 6
+ - Average training metrics: accuracy=0.84475
+ - Average validation metrics: accuracy=0.6504587155963303
+Epoch 7 training:
+ ===> Epoch 7
+ - Average training metrics: accuracy=0.923125
+ - Average validation metrics: accuracy=0.6513761467889908
+torch.cuda.memory_allocated: 0.825549GB
+torch.cuda.memory_reserved: 6.939453GB
+torch.cuda.max_memory_reserved: 6.939453GB
+Mon Mar 13 03:24:51 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 460.56       Driver Version: 460.56       CUDA Version: 11.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Graphics Device     On   | 00000000:17:00.0 Off |                   On |
+| N/A   58C    P0   295W / 300W |  42823MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   1  Graphics Device     On   | 00000000:31:00.0 Off |                   On |
+| N/A   61C    P0   270W / 300W |  49047MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   2  Graphics Device     On   | 00000000:B1:00.0 Off |                   On |
+| N/A   45C    P0   167W / 300W |  23414MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+|   3  Graphics Device     On   | 00000000:CA:00.0 Off |                   On |
+| N/A   34C    P0   101W / 300W |   8311MiB / 81251MiB |     N/A      Default |
+|                               |                      |              Enabled |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| MIG devices:                                                                |
++------------------+----------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |         Memory-Usage |        Vol|         Shared        |
+|      ID  ID  Dev |           BAR1-Usage | SM     Unc| CE  ENC  DEC  OFA  JPG|
+|                  |                      |        ECC|                       |
+|==================+======================+===========+=======================|
+|  1   11   0   0  |   8028MiB /  9728MiB | 14      0 |  1   0    0    0    0 |
+|                  |      4MiB / 16383MiB |           |                       |
++------------------+----------------------+-----------+-----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0    7    0       5461      C   ...sification_env/bin/python     7345MiB |
+|    0   12    0      10288      C   ...jeefzx3kp5jqdu/bin/python     7345MiB |
+|    0   14    0      10997      C   ...jeefzx3kp5jqdu/bin/python     8271MiB |
+|    0    8    0      11126      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    0    9    0      12003      C   ...sification_env/bin/python     7345MiB |
+|    0   13    0      12207      C   ...jeefzx3kp5jqdu/bin/python     4461MiB |
+|    1   11    0       9198      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    2    8    0       9465      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    2    9    0       9467      C   ...jeefzx3kp5jqdu/bin/python     8023MiB |
+|    2   10    0      12081      C   ...jeefzx3kp5jqdu/bin/python     7345MiB |
+|    3    8    0       1245      C   ...jeefzx3kp5jqdu/bin/python     8295MiB |
++-----------------------------------------------------------------------------+
+
+ - Average DEV metrics: accuracy=0.6513761467889908
+ - Average TEST metrics: accuracy=0.6531184302733006
